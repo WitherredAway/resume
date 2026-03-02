@@ -2,194 +2,133 @@
 #show: project
 
 #let title_items = (
-  sys.inputs.at("phone", default: none),
-  link("mailto:oliverni@berkeley.edu"),
-  link("https://linkedin.com/in/oliverni")[#fab("linkedin") oliverni],
-  link("https://github.com/oliver-ni")[#fab("github") oliver-ni],
+  "+91 8927058045",
+  link("mailto:sdssouvic@gmail.com"),
+  link("https://github.com/witherredaway")[#fab("github") witherredaway],
 )
 
 // Title row.
 #align(center)[
-  #block(text(weight: 700, size: 1.5em)[Oliver Ni])
-  #title_items.filter(x => x != none).join([#h(0.5em)•#h(0.5em)])
+  #block(text(weight: 700, size: 1.5em)[Souvic Das])
+  #title_items.join([#h(0.5em)•#h(0.5em)])
+  #linebreak()
+  241001001025 · B.Tech CSE · Batch F1
 ]
 
 
-= Education
+= Summary
 
-#entry[
-  == University of California, Berkeley
-
-  Electrical Engineering and Computer Sciences, B.S. \
-  Mathematics, B.A.
-][
-  *Expected Graduation:* May 2026 \
-  *Grade:* 4.0/4.0 \
-  \* currently taking course
-][
-  *Relevant Coursework:*
-  Data Structures
-  · Operating Systems
-  · Computer Architecture
-  · Graphics
-  // · Structure & Interpretation of Computer Programs
-  // · Discrete Mathematics & Probability Theory
-  · Computer Security
-  · Programming Languages and Compilers
-  · Internet Architecture
-  · Linear Algebra
-  · Abstract Algebra
-  · Real Analysis
-  · Category Theory
-  · Logic\*
-
-  // #h(1fr) \* currently taking course
-]
+Passionate and fast learner with 6+ years of programming and software development experience. Strong foundation in computer science principles, data structures and algorithms, backend development, Linux systems, and scalable application design.
 
 
 = Experience
 
 #entry[
   == Pokétwo
-  _Creator, Lead Developer_
+  _Software Developer, Administrator_
 ][
-  May 2020 -- Present
+  August 2023 -- Present
 ][
-  - Created Pokémon-themed game chatbot enabling *5 million users* across *1 million communities* to connect online.
-  - Managed distributed Linux server cluster handling *10,000+ requests per second* with Kubernetes, RabbitMQ, gRPC, and Redis.
-  - Optimized MongoDB database to efficiently accommodate complex queries across 1.7 billion documents.
-]
-
-#entry[
-  == Jane Street
-  _Software Engineering Intern_
-][
-  May -- August 2024
-][
-  - Added feature to firm-wide statistical analysis service and its downstream clients, unlocking new trade opportunities.
-  - Designed and built readiness monitoring and rolling updates for infrastructure management system powering *10,000+* machines.
-]
-
-#entry[
-  == Apple
-  _Hardware Technology Intern_
-][
-  June -- August 2023
-][
-  - Accelerated wireless simulation workflow by building unified internal platform for data processing and visualization.
-  - Designed and implemented specialized query language using *parsing expression grammars* and executed them in *ClickHouse*.
-]
-
-#entry[
-  == Open Computing Facility
-  _Site Manager_
-][
-  July 2023 -- Present
-][
-  - Administered Linux infrastructure serving *petabytes of data* annually for *80,000+ students and faculty* as technical lead.
-  - Architected and built new bare-metal Kubernetes infrastructure, directing migration of *40+ services* from legacy systems.
-  // - Developed bespoke Infrastructure-as-Code tool to declaratively automate continuous building and deployment on the new cluster.
-  - Built *30+* new desktop computers running *NixOS*-based declarative system configuration, replacing legacy Puppet systems.
-]
-
-#entry[
-  == CS 162: Operating Systems
-  _Undergraduate Course Staff 1_
-][
-  January -- May 2024
-][
-  - Taught *400+ students* operating systems concepts (processes and isolation, threading, virtual memory, file systems, distributed)
-    through hosting office hours, review sessions, and answering online discussion board questions as course tutor.
+  - Contributed to development of large-scale Discord chatbot game serving 5.5M+ users across 1.4M+ communities.
+  - Pushed 400+ commits and opened 150+ pull requests, almost all merged successfully.
+  - Used Python (discord.py), MongoDB, and Redis to support 50,000+ concurrent players.
+  - Implemented 15+ major features and 35+ enhancements.
+  - Fixed 10+ critical and 40+ minor issues.
+  - Collaborated closely with development and moderation teams to improve performance and gameplay.
 ]
 
 
 = Projects
 
 #entry[
-  == ContestDojo
-  _TypeScript · React · Next.js · Remix · Firebase_
+  == Yeet.
+  _Python · Discord API · Docker · Pandas · NumPy_
 ][
-  February 2021 -- Present
+  May 2021 -- Present
 ][
-  - Built online math competition platform hosting over *11,000+ students* in the *Stanford* and *Berkeley* Math Tournaments.
-  - Designed atomic grading system enabling *1,000+ tests* to be graded in parallel within 20 minutes, reducing manpower by 95%.
-  // - Designed and implemented atomic grading system enabling *1,000+ tests* to be graded in parallel within minutes.
-  // - Reduced required manpower to grade tests by *95%* while simultaneously enabling more flexible answer formats.
-  // - Empowered independent student groups around the world to run their own math tournaments, inspired by SMT and BMT.
+  - Built multi-purpose Discord bot used by 3,200+ users across 100+ communities.
+  - Pushed 1,000+ commits to GitHub repository.
+  - Containerized with Docker for scalable deployment.
+  - Designed pixel-art generator using 2D matrices and OOP concepts.
+  - Built calculator engine utilizing advanced DSA and OOP principles.
 ]
 
 #entry[
-  == Lynbrook Mobile App
-  _Python · Django · PostgreSQL · TypeScript · React Native_
+  == gists.py
+  _Python · GitHub API · aiohttp_
 ][
-  September 2019 -- June 2022
+  March 2022 -- Present
 ][
-  - Developed cross-platform iOS and Android app enabling *1,400+ students* to keep up with news from the school and their clubs.
-  - Automated attendance tracking for *20+ clubs*, unifying dozens of Google forms and eliminating hours of manual work per week.
-  // - Trained team of *5* other students in React & React Native to continue improving the app after my own graduation.
+  - Developed asynchronous GitHub Gists API wrapper.
+  - Published to PyPI for public installation and use.
+]
+
+#entry[
+  == Arduino Projects
+  _C++ · Arduino · ESP8266 · ESP32_
+][
+  July 2024 -- Present
+][
+  - Built hardware prototypes including temperature & humidity monitor.
+  - Developed Wi-Fi web control system using ESP8266.
+  - Designed LED lighting array systems.
+]
+
+#entry[
+  == GDG Web Development
+  _HTML · CSS · JavaScript_
+][
+  November 2024 -- Present
+][
+  - Replicated fully responsive web pages.
+  - Applied modern UI trends like neumorphism and glassmorphism.
 ]
 
 
 = Technical Skills
 
-#let TeX = context {
-  set text(font: "New Computer Modern")
-  let e = measure("E")
-  let T = "T"
-  let E = text(1em, baseline: e.height * 0.31, "E")
-  let X = "X"
-  box(T + h(-0.15em) + E + h(-0.125em) + X)
-}
+*Programming Languages:*  
+Python · C++ · C · JavaScript · Bash
 
-#let LaTeX = context {
-  set text(font: "New Computer Modern")
-  let a-size = 0.66em
-  let l = measure("L")
-  let a = measure(text(a-size, "A"))
-  let L = "L"
-  let A = box(scale(x: 105%, text(a-size, baseline: a.height - l.height, "A")))
-  box(L + h(-a.width * 0.67) + A + h(-a.width * 0.25) + TeX)
-}
+*Database Management:*  
+MongoDB · SQL · Redis · PostgreSQL · MySQL
 
-*Programming Languages:* Python · JavaScript · TypeScript · Rust · Elixir/OTP · C · Java · SQL
+*Infrastructure and Tools:*  
+Docker · Linux · Git · GitHub Actions · Markdown
 
-*Infrastructure and Tools:* Docker · Kubernetes · Nix · NixOS · Ansible · #LaTeX · Typst · Linux · Git · GitHub Actions
+*Web Development:*  
+HTML · CSS · JavaScript
 
-*Web Frameworks:* React · React Native · Next.js · Remix · Svelte · SvelteKit · Vue.js · Django · Flask · Starlette · Phoenix
+*Libraries & Technologies:*  
+NumPy · Pandas · Matplotlib · Pillow
 
-*Other Technologies:* NumPy · PyTorch · Pandas · gRPC · PostgreSQL · MongoDB · Redis · Prometheus · Grafana
+*Hardware:*  
+Arduino Uno · Nano · ESP32 · ESP8266 · DHT11
 
 
-= Honors & Awards
+= Soft Skills
 
-#let award(title, description) = entry(
-  below: 1em,
-  [=== #title],
-  description,
-  none
-)
+*Team Leadership & Management*
 
-#award(
-  "USA Computing Olympiad, Platinum Contestant",
-  "Top ~500 pre-college students in US (2022)"
-)
+- Administrator & moderator managing community of 250,000+ members.
+- Collaborated with 20+ moderators and developers to ensure smooth operations.
 
-#award(
-  "Advent of Code, Global Rank 17",
-  "17/225,000+ (2023) · 29/250,000+ (2022) · 34/175,000+ (2020)"
-)
 
-// #award(
-//   "American Invitational Mathematics Examination, Qualifier",
-//   "Top 5% of AMC 12 participants (2019, 2021, 2022)"
-// )
+= Education
 
-// #award(
-//   "USA Physics Olympiad, Semifinalist",
-//   "Top ~400 pre-college students in US (2020, 2022)"
-// )
+#entry[
+  == Techno India University, West Bengal
+][
+  Expected Graduation: August 2028
+][
+  B.Tech in Computer Science and Engineering
+]
 
-#award(
-  "Eagle Scout",
-  "Developed extensive leadership and planning skills through my 8-year scouting journey."
-)
+#entry[
+  == Aditya Academy Senior Secondary
+][
+  Graduation: April 2024
+][
+  Class 12 (Science - PCMCs) – 75% \
+  Class 10 – 83%
+]
