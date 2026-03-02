@@ -1,3 +1,6 @@
+// Resume template originally created by Oliver Ni
+// Adapted and modified by Souvic Das
+
 #import "template.typ": *
 #show: project
 
