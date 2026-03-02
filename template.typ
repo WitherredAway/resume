@@ -1,5 +1,17 @@
+/*
+Resume template originally created by Oliver Ni.
+Used and modified by Souvic Das.
+
+Original structure and layout credit:
+Oliver Ni
+
+This file contains design and layout adaptations.
+*/
+
+#let resume_author = "Souvic Das"
+
 #let project(body) = {
-  set document(title: "Oliver Ni", author: ("Oliver Ni"))
+  set document(title: resume_author + " – Resume", author: (resume_author))
   set page(paper: "us-letter", margin: 0.25in)
 
   set text(font: "EB Garamond", lang: "en", size: 11pt, weight: 400)
