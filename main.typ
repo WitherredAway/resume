@@ -12,7 +12,7 @@
   #block(text(weight: 700, size: 1.5em)[Souvic Das])
   #title_items.join([#h(0.5em)•#h(0.5em)])
   #linebreak()
-  241001001025 · B.Tech CSE · Batch F1
+  B.Tech CSE Core
 ]
 
 
