@@ -13,11 +13,11 @@
 
 = Summary
 
-Self-taught software developer with 6+ years of programming experience, currently building
-#link("https://github.com/poketwo/poketwo")[Pokétwo], an open-source Discord game serving 5.5M+
-players. Comfortable across asynchronous Python services, MongoDB and Redis at scale, Docker
-deployments and Linux tooling. B.Tech. Computer Science student shipping production open-source
-software.
+Software developer building production systems at Discord scale. Core developer of
+#link("https://github.com/poketwo/poketwo")[Pokétwo], an open-source Pokémon game played in *1.5M+
+servers*, owning its anticheat stack and the image-generation service behind its visual commands.
+*8+ years* of programming across asynchronous Python, machine learning, Kotlin/Android and embedded
+C++. B.Tech. Computer Science student, 2028.
 
 = Experience
 
@@ -27,29 +27,46 @@ software.
   date: [August 2023 -- Present],
   source: url("https://github.com/poketwo/poketwo", "github.com/poketwo/poketwo"),
 )
-- Ship features and fixes for a text-based game with *5.5M+ registered users* across *1.4M+ Discord
-  servers*, peaking at *50,000+ concurrent players*.
-- Authored *400+ commits* across *150+ pull requests* — *15 major and 35 minor features*, plus *10
-  critical and 40 routine defect fixes* — nearly all reviewed and merged.
-- Cut database load on high-traffic commands by adding _Redis_ caching and tightening _MongoDB_
-  queries and indexes.
-- Scope features, triage incidents and roll out gameplay changes with the development,
-  administration and event teams.
+- Design and ship gameplay features end to end — command flows, interaction design and the generated
+  artwork behind them — for a game in *1.5M+ servers* with *50,000+ concurrent players*.
+- Built the anticheat system from scratch: a gradient-boosted model over character n-gram language
+  models, scoring *600K+ accounts* at *0.976 AUC* — bot detection up from *38% to 83%*, false
+  accusations of real players down *8×* to *1%*.
+- Lead contributor to the image service rendering battles, breeding, seasonal events and
+  user-customizable sprites, replacing static assets with a composable _Pillow_ pipeline.
+- Authored *2,500+ commits* and *540+ pull requests* (*465 merged*) across eight production
+  repositories: bot, image service, anticheat, data pipeline, deployment manifests.
+- Cut database load on high-traffic commands with _Redis_ caching and rewritten _MongoDB_ queries and
+  indexes; ship through _Docker_ and _Kubernetes_.
 
 = Projects
 
 #entry(
+  title: "Notification Mirror · Camera Remote",
+  tags: "Kotlin · Jetpack Compose · Wear OS",
+  date: [February 2026 -- Present],
+  source: url("https://github.com/WitherredAway/NotificationMirror", "github.com/WitherredAway/NotificationMirror"),
+)
+- Shipped two Wear OS apps — notification mirroring with reply and action support, and a remote
+  driving any phone camera app over the accessibility API — to *26 stars* and *400+ installs*.
+
+#entry(
   title: "Yeet.",
-  tags: "Python · discord.py · Docker · Pandas · NumPy · Pillow",
+  tags: "Python · discord.py · Docker · Pillow · NumPy",
   date: [May 2021 -- Present],
   source: url("https://github.com/witherredaway/yeet", "github.com/witherredaway/yeet"),
 )
-- Built and maintain a multi-purpose Discord bot used by *3,200+ users* in *100+ servers*, with
-  *1,000+ commits*, *10 major features* and *20 critical bug fixes* to date.
-- Designed a chat-native pixel art editor on top of 2D matrices and an object-oriented rendering
-  pipeline, letting users draw and share art without leaving Discord.
-- Containerized the bot with _Docker_ so CPU-heavy image and matrix operations behave identically in
-  development and production.
+- Sole author of a multi-purpose Discord bot across *890+ commits*, centred on a chat-native pixel
+  art editor built on 2D matrices and an object-oriented rendering pipeline.
+
+#entry(
+  title: "Neurostride",
+  tags: "Python · PyTorch · MediaPipe · OpenCV · Flask",
+  date: [October 2025],
+  source: url("https://github.com/WitherredAway/Neurostride", "github.com/WitherredAway/Neurostride"),
+)
+- Gait-analysis system flagging abnormal movement from video, pairing pose extraction and a _PyTorch_
+  classifier with a _Flask_ prediction API and dashboard.
 
 #entry(
   title: "gists.py",
@@ -57,42 +74,21 @@ software.
   date: [March 2022 -- Present],
   source: url("https://github.com/witherredaway/gists.py", "github.com/witherredaway/gists.py"),
 )
-- Wrote an asynchronous API wrapper for the GitHub Gists API using _aiohttp_.
-- Published the library to #link("https://pypi.org/project/gists.py/")[PyPI] with documentation, so
-  it installs with a single `pip install`.
-
-#entry(
-  title: "Arduino Projects",
-  tags: "C++ · Arduino · ESP8266",
-  date: [July 2024 -- Present],
-  source: url("https://github.com/WitherredAway/arduino-projects", "github.com/WitherredAway/arduino-projects"),
-)
-- Prototyped embedded projects including a live temperature and humidity monitor, an ESP8266 Wi-Fi
-  server for browser-based device control, and an LED array lighting system.
-
-#entry(
-  title: "GDG Web Development",
-  tags: "HTML · CSS · JavaScript",
-  date: [November 2024 -- Present],
-  source: url("https://witherredaway.github.io/gdg-web-dev/purem-oda", "witherredaway.github.io/gdg-web-dev/purem-oda"),
-)
-- Recreated a production landing page as a fully responsive layout, extending it with neumorphic and
-  glassmorphic styling.
+- Asynchronous wrapper for the GitHub Gists API, published to #link("https://pypi.org/project/gists.py/")[PyPI] with documentation.
 
 = Technical Skills
 
-- *Python* #note[async services · Discord and REST APIs · Pandas · NumPy · Pillow · Matplotlib] \
-  #note[Pokétwo · Pokétwo Image Server, an image manipulation API · gists.py · Yeet.]
-- *C, C++, Arduino* #note[data structures and algorithms · hardware prototyping]
-- *Web* #note[HTML · CSS · JavaScript — personal site, text parsing tools, GDG projects]
-- *Databases* #note[MongoDB · Redis · PostgreSQL · MySQL · SQL]
-- *Infrastructure* #note[Docker · Linux · Git · GitHub Actions · Bash scripting]
+- *Python* #note[async services · Discord and REST APIs · Pandas · NumPy · Pillow · Matplotlib]
+- *Machine Learning* #note[gradient boosting · feature engineering · held-out evaluation · PyTorch · scikit-learn · SciPy · MediaPipe]
+- *Kotlin, Android* #note[Jetpack Compose · Wear OS · Java (learning)]
+- *C, C++, Arduino* #note[data structures and algorithms, linear and non-linear · ESP8266 prototyping]
+- *Web* #note[HTML · CSS · JavaScript · Svelte — personal site, GDG projects, guitar tab player]
+- *Data & Infrastructure* #note[MongoDB · Redis · PostgreSQL · MySQL · Docker · Kubernetes · Linux · Git · GitHub Actions · Bash · agentic AI workflows]
 
 = Leadership
 
-- Administrator of the Pokétwo community: lead a team of *20 moderators* serving *250,000+ members*,
-  setting policy and handling escalations.
-- Mentor contributors on the Pokétwo developer team through code review and design discussion.
+- Administrator of the Pokétwo community: lead *20 moderators* serving *250,000+ members*, set policy
+  and handle escalations; mentor developer-team contributors through code and design review.
 
 = Education & Certifications
 

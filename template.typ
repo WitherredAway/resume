@@ -30,14 +30,14 @@
   set document(title: author + " - Curriculum Vitae", author: author)
   set page(paper: "us-letter", margin: (x: 0.7in, y: 0.55in))
   set text(font: serif, size: 10.5pt, lang: "en")
-  set par(justify: true, leading: 0.58em, spacing: 0.55em)
+  set par(justify: true, leading: 0.55em, spacing: 0.5em)
   set list(marker: text(fill: accent)[•], indent: 0.7em, body-indent: 0.5em, spacing: 0.45em)
   show strong: set text(weight: "semibold")
   show link: set text(fill: accent)
 
   show heading.where(level: 1): it => block(
-    above: 0.95em,
-    below: 0.55em,
+    above: 0.8em,
+    below: 0.45em,
     width: 100%,
     stroke: (bottom: 0.6pt + accent),
     inset: (bottom: 0.3em),
@@ -52,7 +52,7 @@
   #contacts.join([#h(0.45em)•#h(0.45em)])
 ]
 
-#let entry(title: "", tags: none, date: none, source: none) = block(above: 0.75em, below: 0.45em)[
+#let entry(title: "", tags: none, date: none, source: none) = block(above: 0.6em, below: 0.4em)[
   #grid(
     columns: (1fr, auto),
     align: (left, right),
