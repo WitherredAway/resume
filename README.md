@@ -5,6 +5,8 @@ My curriculum vitae, written in [Typst](https://typst.app/).
 - `main.typ` — the content
 - `template.typ` — the layout
 - `main.pdf` — the compiled output
+- `stats.json` — commit, pull request, star and download counts pulled from the GitHub API
+- `stats.py` — regenerates `stats.json`
 
 ## Build
 
@@ -24,5 +26,16 @@ Regenerate the previews below:
 typst compile --font-path fonts --format png --ppi 150 main.typ "preview-{n}.png"
 ```
 
-![Page 1](./preview-1.png)
-![Page 2](./preview-2.png)
+## Stats
+
+The contribution counts in the resume come from `stats.json` rather than being typed in:
+
+```sh
+GITHUB_TOKEN=... python3 stats.py
+```
+
+A weekly [workflow](.github/workflows/refresh.yml) reruns it, recompiles and commits the result.
+Reading the private Pokétwo repositories needs a `STATS_TOKEN` secret with `repo` scope; without it
+those counts keep their last known values.
+
+![Resume](./preview-1.png)
