@@ -14,7 +14,7 @@
 = Summary
 
 Software developer building production systems at Discord scale. Core developer of
-#link("https://github.com/poketwo/poketwo")[Pokétwo], an open-source Pokémon game played in *1.5M+
+#link("https://github.com/poketwo/poketwo")[Pokétwo], an open-source Pokémon game played in *2.3M+
 servers*, owning its anticheat stack and the image-generation service behind its visual commands.
 *8+ years* of programming across asynchronous Python, machine learning, Kotlin/Android and embedded
 C++. B.Tech. Computer Science student, 2028.
@@ -28,7 +28,8 @@ C++. B.Tech. Computer Science student, 2028.
   source: url("https://github.com/poketwo/poketwo", "github.com/poketwo/poketwo"),
 )
 - Design and ship gameplay features end to end — command flows, interaction design and the generated
-  artwork behind them — for a game in *1.5M+ servers* with *50,000+ concurrent players*.
+  artwork behind them — for a game in *2.3M+ servers* with *7.7M+ trainers* and *69,000+ daily
+  active players*.
 - Built the anticheat system from scratch: a gradient-boosted model over character n-gram language
   models, scoring *600K+ accounts* at *0.976 AUC* — bot detection up from *38% to 83%*, false
   accusations of real players down *8×* to *1%*.
