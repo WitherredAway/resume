@@ -24,5 +24,4 @@ Regenerate the previews below:
 typst compile --font-path fonts --format png --ppi 150 main.typ "preview-{n}.png"
 ```
 
-![Page 1](./preview-1.png)
-![Page 2](./preview-2.png)
+![Resume](./preview-1.png)

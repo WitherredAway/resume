@@ -1,8 +1,9 @@
-#let serif = ("Times New Roman", "Liberation Serif", "TeX Gyre Termes")
+#let serif = ("EB Garamond", "Libertinus Serif", "Liberation Serif")
+#let accent = rgb("#1f3864")
 
 #let fab(name) = text(font: "Font Awesome 6 Brands", name)
 
-#let url(target, label) = text(size: 9pt)[#link(target)[#underline(label)]]
+#let url(target, label) = text(size: 9pt)[#link(target)[#label]]
 
 #let note(body) = text(size: 9.5pt, fill: luma(110), style: "italic")[#body]
 
@@ -16,7 +17,7 @@
   upper(w.first()) + text(size: 0.82em, upper(w.slice(1)))
 }).join(" ")
 
-#let row(left-side, right-side) = block(below: 0.35em)[
+#let row(left-side, right-side) = block(below: 0.3em)[
   #grid(columns: (1fr, auto), align: (left, right), left-side, right-side)
 ]
 
@@ -27,30 +28,31 @@
 
 #let resume(author: "", body) = {
   set document(title: author + " - Curriculum Vitae", author: author)
-  set page(paper: "us-letter", margin: (x: 0.8in, y: 0.7in))
-  set text(font: serif, size: 11pt, lang: "en")
-  set par(justify: true, leading: 0.65em, spacing: 0.65em)
-  set list(marker: ([•], [◦]), indent: 1em, body-indent: 0.65em, spacing: 0.65em)
-  show link: set text(fill: rgb("#0563c1"))
+  set page(paper: "us-letter", margin: (x: 0.7in, y: 0.55in))
+  set text(font: serif, size: 10.5pt, lang: "en")
+  set par(justify: true, leading: 0.58em, spacing: 0.55em)
+  set list(marker: text(fill: accent)[•], indent: 0.7em, body-indent: 0.5em, spacing: 0.45em)
+  show strong: set text(weight: "semibold")
+  show link: set text(fill: accent)
 
   show heading.where(level: 1): it => block(
-    above: 1.4em,
-    below: 0.9em,
+    above: 0.95em,
+    below: 0.55em,
     width: 100%,
-    stroke: (bottom: 0.6pt),
-    inset: (bottom: 0.35em),
-  )[#set text(size: 11pt, weight: "regular"); #caps(plain(it.body))]
+    stroke: (bottom: 0.6pt + accent),
+    inset: (bottom: 0.3em),
+  )[#set text(size: 11pt, weight: "semibold", fill: accent); #caps(plain(it.body))]
 
   body
 }
 
 #let head(name: "", contacts: ()) = align(center)[
-  #text(size: 22pt, weight: "bold")[#name]
+  #text(size: 21pt, weight: "bold")[#name]
   #linebreak()
   #contacts.join([#h(0.45em)•#h(0.45em)])
 ]
 
-#let entry(title: "", tags: none, date: none, source: none) = block(above: 1em, below: 0.6em)[
+#let entry(title: "", tags: none, date: none, source: none) = block(above: 0.75em, below: 0.45em)[
   #grid(
     columns: (1fr, auto),
     align: (left, right),

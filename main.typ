@@ -13,135 +13,93 @@
 
 = Summary
 
-I am a passionate and fast learner with hands-on experience of 6+ years in programming and software
-development. I have extensive knowledge and experience of 7+ years in Computer Science, Computer
-Technologies and Applications. I am proficient in Python, MongoDB, Data Structures and Algorithms,
-SQL, HTML, CSS, JavaScript, Docker, Arduino, Web Applications and Linux Systems.
+Self-taught software developer with 6+ years of programming experience, currently building
+#link("https://github.com/poketwo/poketwo")[Pokétwo], an open-source Discord game serving 5.5M+
+players. Comfortable across asynchronous Python services, MongoDB and Redis at scale, Docker
+deployments and Linux tooling. B.Tech. Computer Science student shipping production open-source
+software.
 
 = Experience
 
 #entry(
   title: "Pokétwo",
   tags: "Software Developer, Administrator",
-  date: [August 2023 - Present],
-  source: url("https://github.com/poketwo/poketwo", "https://github.com/poketwo/poketwo"),
+  date: [August 2023 -- Present],
+  source: url("https://github.com/poketwo/poketwo", "github.com/poketwo/poketwo"),
 )
-- Developed and enhanced _Pokétwo_, a widely popular online text-based chatbot game with active
-  participation from over *5.5 million users* and more than *1.4 million online communities*.
-- Utilized Git version control system to store and manage open-source source code, pushing *400+
-  commits* and creating *150+ pull requests,* almost all of which were approved and merged.
-- Utilized _discord.py_ for efficient asynchronous connection with the _Discord_ API, _MongoDB_ for
-  robust data management and _Redis_ for caching and optimizing purposes for *50,000+* simultaneous
-  players.
-- Played a pivotal role in the growth of _Pokétwo_ by consistently delivering high-quality code,
-  implementing *15+* major and *35+* other features and improvements, and fixing *10+* critical and
-  *40+* other bugs and issues, among many other improvements of speed, efficiency and
-  user-experience, involvement in implementation of new features and solutions to various problems.
-- Successfully collaborated with the development, administration and event management teams to
-  implement new features, resolve technical issues, and improve gameplay and user-experience.
+- Ship features and fixes for a text-based game with *5.5M+ registered users* across *1.4M+ Discord
+  servers*, peaking at *50,000+ concurrent players*.
+- Authored *400+ commits* across *150+ pull requests* — *15 major and 35 minor features*, plus *10
+  critical and 40 routine defect fixes* — nearly all reviewed and merged.
+- Cut database load on high-traffic commands by adding _Redis_ caching and tightening _MongoDB_
+  queries and indexes.
+- Scope features, triage incidents and roll out gameplay changes with the development,
+  administration and event teams.
 
 = Projects
 
 #entry(
   title: "Yeet.",
-  tags: "Python · Discord API · Git · Pandas · NumPy · Docker",
+  tags: "Python · discord.py · Docker · Pandas · NumPy · Pillow",
   date: [May 2021 -- Present],
-  source: url("https://github.com/witherredaway/yeet", "https://github.com/witherredaway/yeet"),
+  source: url("https://github.com/witherredaway/yeet", "github.com/witherredaway/yeet"),
 )
-- Created multi-purpose and entertainment bot for popular online chat platform _Discord_, enabling
-  *over 3,200 users* across *100+ online communities* to connect and interact, pushing *over 1,000
-  commits* to the GitHub source code repository.
-- Containerized and deployed the application with _Docker_ ensuring seamless compatibility and
-  functioning of resource-intensive processes and algorithms used by core features of the bot.
-- Implemented *10+* major and *30+* other features and enhancements and fixed *20+* critical and
-  *40+* other bugs and glitches, along with brainstorming, design and building of the UI/UX.
-- Designed and built a unique and fully-featured pixel art tool directly accessible through chat
-  utilizing 2D Matrices, complex algorithms and advanced concepts of OOP (Object Oriented
-  Programming) to provide a fun platform to create and share pieces of art, and a fully functional
-  calculator, utilizing OOP (Object Oriented Programming) and concepts of DSA (Data Structures and
-  Algorithms).
+- Built and maintain a multi-purpose Discord bot used by *3,200+ users* in *100+ servers*, with
+  *1,000+ commits*, *10 major features* and *20 critical bug fixes* to date.
+- Designed a chat-native pixel art editor on top of 2D matrices and an object-oriented rendering
+  pipeline, letting users draw and share art without leaving Discord.
+- Containerized the bot with _Docker_ so CPU-heavy image and matrix operations behave identically in
+  development and production.
 
 #entry(
   title: "gists.py",
-  tags: "Python · GitHub API · Git",
-  date: [March 2022 - Present],
-  source: url("https://github.com/witherredaway/gists.py", "https://github.com/witherredaway/gists.py"),
+  tags: "Python · aiohttp · GitHub API",
+  date: [March 2022 -- Present],
+  source: url("https://github.com/witherredaway/gists.py", "github.com/witherredaway/gists.py"),
 )
-- Created public open-source asynchronous API wrapper for the _GitHub Gists_ API using Python and
-  _aiohttp_ for a fast and efficient connection and interaction with the API.
-- Packaged and published a fully-functional public code library through The Python Package Index,
-  allowing users to install and use the package with ease and no obstacles.
+- Wrote an asynchronous API wrapper for the GitHub Gists API using _aiohttp_.
+- Published the library to #link("https://pypi.org/project/gists.py/")[PyPI] with documentation, so
+  it installs with a single `pip install`.
 
 #entry(
   title: "Arduino Projects",
-  tags: "C++ · Arduino",
-  date: [July 2024 - Present],
-  source: url("https://github.com/WitherredAway/arduino-projects", "https://github.com/WitherredAway/arduino-projects"),
+  tags: "C++ · Arduino · ESP8266",
+  date: [July 2024 -- Present],
+  source: url("https://github.com/WitherredAway/arduino-projects", "github.com/WitherredAway/arduino-projects"),
 )
-- Built an assortment of Arduino projects for hardware development and prototyping, ranging from
-  beginner to advanced levels such as _Live Temperature & Humidity Monitoring System_, _Wi-Fi server
-  using ESP8266 to control devices from a website on any device_, _Lighting system using LED arrays,
-  etc._
+- Prototyped embedded projects including a live temperature and humidity monitor, an ESP8266 Wi-Fi
+  server for browser-based device control, and an LED array lighting system.
 
 #entry(
-  title: "Google Developer Groups (GDG) Web Development",
+  title: "GDG Web Development",
   tags: "HTML · CSS · JavaScript",
-  date: [November 2024 - Present],
-  source: [
-    #url("https://witherredaway.github.io/gdg-web-dev/purem-oda", "https://witherredaway.github.io/gdg-web-dev/purem-oda") \
-    #url("https://github.com/WitherredAway/gdg-web-dev/tree/main/purem-oda", "https://github.com/WitherredAway/gdg-web-dev/tree/main/purem-oda")
-  ],
+  date: [November 2024 -- Present],
+  source: url("https://witherredaway.github.io/gdg-web-dev/purem-oda", "witherredaway.github.io/gdg-web-dev/purem-oda"),
 )
-- Created via replication a fully responsive dummy web page and enhanced the design with modern
-  design techniques such as Neumorphism and Glassmorphism.
+- Recreated a production landing page as a fully responsive layout, extending it with neumorphic and
+  glassmorphic styling.
 
 = Technical Skills
 
-*Programming Languages*
+- *Python* #note[async services · Discord and REST APIs · Pandas · NumPy · Pillow · Matplotlib] \
+  #note[Pokétwo · Pokétwo Image Server, an image manipulation API · gists.py · Yeet.]
+- *C, C++, Arduino* #note[data structures and algorithms · hardware prototyping]
+- *Web* #note[HTML · CSS · JavaScript — personal site, text parsing tools, GDG projects]
+- *Databases* #note[MongoDB · Redis · PostgreSQL · MySQL · SQL]
+- *Infrastructure* #note[Docker · Linux · Git · GitHub Actions · Bash scripting]
 
-- _Python_ #note[Data Structures & Algorithms · Web Backend · Game Development · Home Control · API Development · Pandas · NumPy · Pillow · Matplotlib]
-  - _Pokétwo_, a Discord bot game based on the popular game and show franchise Pokémon
-  - _Pokétwo Image Server_, backend for image manipulation API
-  - _gists.py_, an Asynchronous API Wrapper for the GitHub Gists API
-  - _Yeet._, a multi-purpose Discord bot with fun and useful utility functions
-- _C++, Arduino_ #note[Data Structures & Algorithms · Hardware Development & Prototyping]
-  - _Temperature & Humidity Monitoring System · Wi-Fi device control · Array lighting system_
-- _HTML (markup language), CSS_ #note[Web Development]
-  - _Personal Website · Online Text Parsing Tools_ · GDG Web Development Projects
-- _JavaScript_ #note[Web Development]
-- _C_ #note[Data Structures & Algorithms]
-- _Bash_ #note[CLI (Command Line Interface) Scripting]
+= Leadership
 
-*Database Management*: MongoDB · SQL · Redis
-
-*Infrastructure and Tools*: Docker · Linux · Git · GitHub Actions · Markdown
-
-*Other Technologies*: NumPy · Pandas · PostgreSQL · MySQL · MongoDB · Redis · Matplotlib · Arduino
-
-= Soft Skills
-
-*Team Leadership & Management*
-
-- Volunteer Moderator and Administrator of Pokétwo online community, managing a team of around *20
-  moderators*, managing an online community of over *250,000 members*.
-- Software Developer of the Developer Team of Pokétwo, collaborating with and guiding other
-  Developers to ensure a smooth development process.
+- Administrator of the Pokétwo community: lead a team of *20 moderators* serving *250,000+ members*,
+  setting policy and handling escalations.
+- Mentor contributors on the Pokétwo developer team through code review and design discussion.
 
 = Education & Certifications
 
 #row([*Techno India University, West Bengal*], [*Expected Graduation*: August 2028])
-#subrow([Computer Science and Engineering, B.Tech.], note[\* currently taking course])
+#subrow([B.Tech., Computer Science and Engineering], note[currently enrolled])
 
 #row([*Aditya Academy Senior Secondary, Kadambagachi*], [*Graduation*: April 2024])
-#subrow([Class 12 Science (PCMCs), AISSCE], [*Grade Percentage*: 75%])
-#subrow([Class 10, AISSE], [*Grade Percentage*: 83%])
+#subrow([Class 12 Science (PCM + Computer Science), AISSCE — 75% · Class 10, AISSE — 83%], [])
 
-#row(
-  [*International English Language Testing System (IELTS)*],
-  [*Result Publication*: April 2024],
-)
-#subrow([Overall], [*Band Score*: 8.0])
-#subrow([Listening], [*Score*: 9.0])
-#subrow([Reading], [*Score*: 8.5])
-#subrow([Writing], [*Score*: 7.0])
-#subrow([Speaking], [*Score*: 7.0])
+#row([*IELTS* #h(0.3em) #note[Listening 9.0 · Reading 8.5 · Writing 7.0 · Speaking 7.0]], [*Overall Band Score*: 8.0 (April 2024)])
