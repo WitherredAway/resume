@@ -14,10 +14,10 @@
 = Summary
 
 Software developer building production systems at Discord scale. Core developer of
-#link("https://github.com/poketwo/poketwo")[Pokétwo], an open-source Pokémon game played in *2.3M+
-servers*, owning its anticheat stack and the image-generation service behind its visual commands.
-*8+ years* of programming across asynchronous Python, machine learning, Kotlin/Android and embedded
-C++. B.Tech. Computer Science student, 2028.
+#link("https://github.com/poketwo/poketwo")[Pokétwo], an open-source Pokémon game played in
+*#manual.poketwo.servers servers*, owning its anticheat stack and the image-generation service behind
+its visual commands. *#manual.experience_years years* of programming across asynchronous Python,
+machine learning, Kotlin/Android and embedded C++. B.Tech. Computer Science student, 2028.
 
 = Experience
 
@@ -28,15 +28,17 @@ C++. B.Tech. Computer Science student, 2028.
   source: url("https://github.com/poketwo/poketwo", "github.com/poketwo/poketwo"),
 )
 - Design and ship gameplay features end to end — command flows, interaction design and the generated
-  artwork behind them — for a game in *2.3M+ servers* with *7.7M+ trainers* and *69,000+ daily
-  active players*.
+  artwork behind them — for a game in *#manual.poketwo.servers servers* with
+  *#manual.poketwo.trainers trainers* and *#manual.poketwo.daily_active daily active players*.
 - Built the anticheat system from scratch: a gradient-boosted model over character n-gram language
-  models, scoring *600K+ accounts* at *0.976 AUC* — bot detection up from *38% to 83%*, false
-  accusations of real players down *8×* to *1%*.
+  models, scoring *#manual.anticheat.accounts accounts* at *#manual.anticheat.auc AUC* — bot detection
+  up from *#manual.anticheat.detection_before to #manual.anticheat.detection_after*, false accusations
+  of real players down *#manual.anticheat.false_accusation_drop* to
+  *#manual.anticheat.false_accusation_rate*.
 - Lead contributor to the image service rendering battles, breeding, seasonal events and
   user-customizable sprites, replacing static assets with a composable _Pillow_ pipeline.
-- Authored *#approx(stats.poketwo.commits, 500) commits* and *#approx(stats.poketwo.pull_requests, 10) pull
-  requests* (*#group(stats.poketwo.merged_pull_requests) merged*) across #stats.poketwo.repositories production
+- Authored *#approx(gh.poketwo.commits, 500) commits* and *#approx(gh.poketwo.pull_requests, 10) pull
+  requests* (*#group(gh.poketwo.merged_pull_requests) merged*) across #gh.poketwo.repositories production
   repositories: bot, image service, anticheat, data pipeline, deployment manifests.
 - Cut database load on high-traffic commands with _Redis_ caching and rewritten _MongoDB_ queries and
   indexes; ship through _Docker_ and _Kubernetes_.
@@ -50,8 +52,8 @@ C++. B.Tech. Computer Science student, 2028.
   source: url("https://github.com/WitherredAway/NotificationMirror", "github.com/WitherredAway/NotificationMirror"),
 )
 - Shipped two Wear OS apps — notification mirroring with reply and action support, and a remote
-  driving any phone camera app over the accessibility API — to *#stats.wearos.stars stars* and
-  *#approx(stats.wearos.downloads, 100) downloads*.
+  driving any phone camera app over the accessibility API — to *#gh.wearos.stars stars* and
+  *#approx(gh.wearos.downloads, 100) downloads*.
 
 #entry(
   title: "Yeet.",
@@ -59,8 +61,8 @@ C++. B.Tech. Computer Science student, 2028.
   date: [May 2021 -- Present],
   source: url("https://github.com/witherredaway/yeet", "github.com/witherredaway/yeet"),
 )
-- Sole author of a multi-purpose Discord bot across *#approx(stats.yeet.commits, 10) commits*, centred on a chat-native pixel
-  art editor built on 2D matrices and an object-oriented rendering pipeline.
+- Sole author of a multi-purpose Discord bot across *#approx(gh.yeet.commits, 10) commits*, centred on
+  a chat-native pixel art editor built on 2D matrices and an object-oriented rendering pipeline.
 
 #entry(
   title: "gists.py",
@@ -81,8 +83,9 @@ C++. B.Tech. Computer Science student, 2028.
 
 = Leadership
 
-- Administrator of the Pokétwo community: lead *20 moderators* serving *250,000+ members*, set policy
-  and handle escalations; mentor developer-team contributors through code and design review.
+- Administrator of the Pokétwo community: lead *#manual.community.moderators moderators* serving
+  *#manual.community.members members*, set policy and handle escalations; mentor developer-team
+  contributors through code and design review.
 
 = Education & Certifications
 

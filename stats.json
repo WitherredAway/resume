@@ -1,16 +1,38 @@
 {
-  "poketwo": {
-    "commits": 2810,
-    "merged_pull_requests": 465,
-    "pull_requests": 545,
-    "repositories": 8
+  "github": {
+    "poketwo": {
+      "commits": 2810,
+      "merged_pull_requests": 465,
+      "pull_requests": 545,
+      "repositories": 8
+    },
+    "wearos": {
+      "downloads": 714,
+      "releases": 10,
+      "stars": 26
+    },
+    "yeet": {
+      "commits": 891
+    }
   },
-  "wearos": {
-    "downloads": 714,
-    "releases": 10,
-    "stars": 26
-  },
-  "yeet": {
-    "commits": 891
+  "manual": {
+    "anticheat": {
+      "accounts": "600K+",
+      "auc": "0.976",
+      "detection_after": "83%",
+      "detection_before": "38%",
+      "false_accusation_drop": "8\u00d7",
+      "false_accusation_rate": "1%"
+    },
+    "community": {
+      "members": "250,000+",
+      "moderators": "20"
+    },
+    "experience_years": "8+",
+    "poketwo": {
+      "daily_active": "69,000+",
+      "servers": "2.3M+",
+      "trainers": "7.7M+"
+    }
   }
 }

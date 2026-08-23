@@ -28,11 +28,16 @@ typst compile --font-path fonts --format png --ppi 150 main.typ "preview-{n}.png
 
 ## Stats
 
-The contribution counts in the resume come from `stats.json` rather than being typed in:
+Every figure in the resume lives in `stats.json` rather than in the prose, in two halves:
 
-```sh
-GITHUB_TOKEN=... python3 stats.py
-```
+- `github` — commit, pull request, star and download counts, regenerated from the API:
+
+  ```sh
+  GITHUB_TOKEN=... python3 stats.py
+  ```
+
+- `manual` — the numbers no API can answer (Pokétwo's servers and trainers, the anticheat's metrics,
+  community size, years of programming). Edit these by hand; `stats.py` never touches them.
 
 A weekly [workflow](.github/workflows/build.yml) reruns it, recompiles and commits the result.
 Reading the private Pokétwo repositories needs a `STATS_TOKEN` secret with `repo` scope; without it
