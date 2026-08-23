@@ -62,15 +62,6 @@ C++. B.Tech. Computer Science student, 2028.
   art editor built on 2D matrices and an object-oriented rendering pipeline.
 
 #entry(
-  title: "Neurostride",
-  tags: "Python · PyTorch · MediaPipe · OpenCV · Flask",
-  date: [October 2025],
-  source: url("https://github.com/WitherredAway/Neurostride", "github.com/WitherredAway/Neurostride"),
-)
-- Gait-analysis system flagging abnormal movement from video, pairing pose extraction and a _PyTorch_
-  classifier with a _Flask_ prediction API and dashboard.
-
-#entry(
   title: "gists.py",
   tags: "Python · aiohttp · GitHub API",
   date: [March 2022 -- Present],
@@ -81,7 +72,7 @@ C++. B.Tech. Computer Science student, 2028.
 = Technical Skills
 
 - *Python* #note[async services · Discord and REST APIs · Pandas · NumPy · Pillow · Matplotlib]
-- *Machine Learning* #note[gradient boosting · feature engineering · held-out evaluation · PyTorch · scikit-learn · SciPy · MediaPipe]
+- *Machine Learning* #note[gradient boosting · feature engineering · held-out evaluation · PyTorch · scikit-learn · SciPy]
 - *Kotlin, Android* #note[Jetpack Compose · Wear OS · Java (learning)]
 - *C, C++, Arduino* #note[data structures and algorithms, linear and non-linear · ESP8266 prototyping]
 - *Web* #note[HTML · CSS · JavaScript · Svelte — personal site, GDG projects, guitar tab player]
