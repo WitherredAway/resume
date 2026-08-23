@@ -7,6 +7,19 @@
 
 #let note(body) = text(size: 9.5pt, fill: luma(110), style: "italic")[#body]
 
+#let stats = json("stats.json")
+
+#let group(n) = {
+  let digits = str(n).clusters().rev()
+  digits.enumerate()
+    .map(((i, d)) => if i > 0 and calc.rem(i, 3) == 0 { d + "," } else { d })
+    .rev()
+    .join()
+}
+
+// Rounds down to the nearest step so the figure stays true as the count grows.
+#let approx(n, step) = group(int(calc.floor(n / step) * step)) + "+"
+
 #let plain(body) = if body.has("text") {
   body.text
 } else {

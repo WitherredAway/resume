@@ -34,7 +34,8 @@ C++. B.Tech. Computer Science student, 2028.
   accusations of real players down *8×* to *1%*.
 - Lead contributor to the image service rendering battles, breeding, seasonal events and
   user-customizable sprites, replacing static assets with a composable _Pillow_ pipeline.
-- Authored *2,500+ commits* and *540+ pull requests* (*465 merged*) across eight production
+- Authored *#approx(stats.poketwo.commits, 500) commits* and *#approx(stats.poketwo.pull_requests, 10) pull
+  requests* (*#group(stats.poketwo.merged_pull_requests) merged*) across #stats.poketwo.repositories production
   repositories: bot, image service, anticheat, data pipeline, deployment manifests.
 - Cut database load on high-traffic commands with _Redis_ caching and rewritten _MongoDB_ queries and
   indexes; ship through _Docker_ and _Kubernetes_.
@@ -48,7 +49,8 @@ C++. B.Tech. Computer Science student, 2028.
   source: url("https://github.com/WitherredAway/NotificationMirror", "github.com/WitherredAway/NotificationMirror"),
 )
 - Shipped two Wear OS apps — notification mirroring with reply and action support, and a remote
-  driving any phone camera app over the accessibility API — to *26 stars* and *400+ installs*.
+  driving any phone camera app over the accessibility API — to *#stats.wearos.stars stars* and
+  *#approx(stats.wearos.downloads, 100) downloads*.
 
 #entry(
   title: "Yeet.",
@@ -56,7 +58,7 @@ C++. B.Tech. Computer Science student, 2028.
   date: [May 2021 -- Present],
   source: url("https://github.com/witherredaway/yeet", "github.com/witherredaway/yeet"),
 )
-- Sole author of a multi-purpose Discord bot across *890+ commits*, centred on a chat-native pixel
+- Sole author of a multi-purpose Discord bot across *#approx(stats.yeet.commits, 10) commits*, centred on a chat-native pixel
   art editor built on 2D matrices and an object-oriented rendering pipeline.
 
 #entry(
