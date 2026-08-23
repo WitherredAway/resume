@@ -16,7 +16,7 @@
 Software developer building production systems at Discord scale. Core developer of
 #link("https://github.com/poketwo/poketwo")[Pokétwo], an open-source Pokémon game played in
 *#manual.poketwo.servers servers*, owning its anticheat stack and the image-generation service behind
-its visual commands. *#manual.experience_years years* of programming across asynchronous Python,
+its visual commands. *#years-since(manual.programming_since) years* of programming across asynchronous Python,
 machine learning, Kotlin/Android and embedded C++. B.Tech. Computer Science student, 2028.
 
 = Experience
