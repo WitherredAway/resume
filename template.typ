@@ -22,6 +22,15 @@
 // Rounds down to the nearest step so the figure stays true as the count grows.
 #let approx(n, step) = group(int(calc.floor(n / step) * step)) + "+"
 
+// Whole years elapsed since a "YYYY-MM" month, counted at compile time.
+#let years-since(month) = {
+  let start = month.split("-").map(int)
+  let now = datetime.today()
+  let years = now.year() - start.at(0)
+  if now.month() < start.at(1) { years -= 1 }
+  str(years) + "+"
+}
+
 #let plain(body) = if body.has("text") {
   body.text
 } else {
