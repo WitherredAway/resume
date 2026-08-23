@@ -1,54 +1,62 @@
-/*
-Resume template originally created by Oliver Ni.
-Used and modified by Souvic Das.
+#let serif = ("Times New Roman", "Liberation Serif", "TeX Gyre Termes")
 
-Original structure and layout credit:
-Oliver Ni
+#let fab(name) = text(font: "Font Awesome 6 Brands", name)
 
-This file contains design and layout adaptations.
-*/
+#let url(target, label) = text(size: 9pt)[#link(target)[#underline(label)]]
 
-#let resume_author = "Souvic Das"
+#let note(body) = text(size: 9.5pt, fill: luma(110), style: "italic")[#body]
 
-#let project(body) = {
-  set document(title: resume_author + " – Resume", author: (resume_author))
-  set page(paper: "us-letter", margin: 0.25in)
+#let plain(body) = if body.has("text") {
+  body.text
+} else {
+  body.children.map(c => if c.has("text") { c.text } else { " " }).join()
+}
 
-  set text(font: "EB Garamond", lang: "en", size: 11pt, weight: 400)
-  set par(spacing: 0.8em)
-  show strong: it => text(weight: "semibold", it.body)
+#let caps(s) = s.split(" ").map(w => {
+  upper(w.first()) + text(size: 0.82em, upper(w.slice(1)))
+}).join(" ")
 
-  show heading.where(level: 1): it => [
-    #set text(12pt, weight: "regular")
-    #block(
-      width: 100%,
-      stroke: (bottom: 0.5pt),
-      inset: (bottom: 0.5em),
-      above: 1.3em,
-      below: 0.8em,
-      smallcaps(it.body)
-    )
-  ]
-  show heading.where(level: 2): it => {
-    text(size: 12pt, it.body)
-    h(0.3em)
-  }
-  set list(indent: 1em)
+#let row(left-side, right-side) = block(below: 0.35em)[
+  #grid(columns: (1fr, auto), align: (left, right), left-side, right-side)
+]
+
+#let subrow(left-side, right-side) = row(
+  text(size: 10pt, left-side),
+  text(size: 10pt, right-side),
+)
+
+#let resume(author: "", body) = {
+  set document(title: author + " - Curriculum Vitae", author: author)
+  set page(paper: "us-letter", margin: (x: 0.8in, y: 0.7in))
+  set text(font: serif, size: 11pt, lang: "en")
+  set par(justify: true, leading: 0.65em, spacing: 0.65em)
+  set list(marker: ([•], [◦]), indent: 1em, body-indent: 0.65em, spacing: 0.65em)
+  show link: set text(fill: rgb("#0563c1"))
+
+  show heading.where(level: 1): it => block(
+    above: 1.4em,
+    below: 0.9em,
+    width: 100%,
+    stroke: (bottom: 0.6pt),
+    inset: (bottom: 0.35em),
+  )[#set text(size: 11pt, weight: "regular"); #caps(plain(it.body))]
 
   body
 }
 
-#let fab(name) = text(font: "Font Awesome 6 Brands", name)
-#let fas(name) = text(font: "Font Awesome 6 Free Solid", name)
-#let far(name) = text(font: "Font Awesome 6 Free", name)
+#let head(name: "", contacts: ()) = align(center)[
+  #text(size: 22pt, weight: "bold")[#name]
+  #linebreak()
+  #contacts.join([#h(0.45em)•#h(0.45em)])
+]
 
-#let entry(l, r, content, below: 1.2em) = block(
-  below: below,
-  grid(
-    gutter: 0.8em,
+#let entry(title: "", tags: none, date: none, source: none) = block(above: 1em, below: 0.6em)[
+  #grid(
     columns: (1fr, auto),
-    align(left, l),
-    align(right, r),
-    ..if content != none { (grid.cell(colspan: 2, content),) }
+    align: (left, right),
+    row-gutter: 0.3em,
+    [*#title*#if tags != none [#h(0.5em)#note(tags)]],
+    date,
+    grid.cell(colspan: 2, align: left, source),
   )
-)
+]
