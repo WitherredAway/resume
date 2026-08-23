@@ -34,8 +34,11 @@ The contribution counts in the resume come from `stats.json` rather than being t
 GITHUB_TOKEN=... python3 stats.py
 ```
 
-A weekly [workflow](.github/workflows/refresh.yml) reruns it, recompiles and commits the result.
+A weekly [workflow](.github/workflows/build.yml) reruns it, recompiles and commits the result.
 Reading the private Pokétwo repositories needs a `STATS_TOKEN` secret with `repo` scope; without it
 those counts keep their last known values.
+
+The same workflow recompiles and commits `main.pdf` and `preview-1.png` whenever the source changes
+on `main`, so editing a `.typ` file is enough — no need to build and commit the output by hand.
 
 ![Resume](./preview-1.png)

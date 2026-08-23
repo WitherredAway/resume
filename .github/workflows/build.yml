@@ -1,0 +1,61 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+    paths: ["main.typ", "template.typ", "stats.json", "fonts/**"]
+  pull_request:
+    paths: ["main.typ", "template.typ", "stats.json", "fonts/**"]
+  schedule:
+    - cron: "0 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: typst-community/setup-typst@v4
+        with:
+          typst-version: "0.15.1"
+
+      # Only on a schedule or by hand: a push is a content edit, and the API
+      # counts move slowly enough that re-querying them on every commit is noise.
+      - name: Collect stats
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python3 stats.py
+
+      - name: Compile
+        run: |
+          typst compile --font-path fonts main.typ
+          typst compile --font-path fonts --format png --ppi 150 main.typ "preview-{n}.png"
+          command -v pdfinfo >/dev/null || sudo apt-get install -y -qq poppler-utils
+          test "$(pdfinfo main.pdf | awk '/^Pages:/ {print $2}')" = 1 || {
+            echo "::error::main.pdf is no longer one page"; exit 1;
+          }
+
+      # Skipped on pull requests, where compiling is the check and the built
+      # PDF is an artifact to download rather than something to commit.
+      - name: Upload
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: |
+            main.pdf
+            preview-1.png
+
+      - name: Commit
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats.json main.pdf preview-1.png
+          git diff --quiet --cached || git commit -m "Rebuild resume"
+          git push
