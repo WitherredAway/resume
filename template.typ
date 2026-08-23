@@ -1,5 +1,5 @@
 #let serif = ("EB Garamond", "Libertinus Serif", "Liberation Serif")
-#let accent = rgb("#1f3864")
+#let accent = rgb("#2d5eb3")
 
 #let fab(name) = text(font: "Font Awesome 6 Brands", name)
 
