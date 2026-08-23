@@ -1,4 +1,8 @@
-"""Collect the resume's GitHub-derived counts into stats.json.
+"""Collect the resume's GitHub-derived counts into the "github" key of stats.json.
+
+The "manual" key holds the numbers no API can tell me (Pokétwo's server and
+trainer counts, the anticheat's evaluation metrics, community size) and is
+left exactly as written.
 
 Needs a token in GITHUB_TOKEN with read access to the repositories below;
 private repositories are skipped (their previous values are kept) when the
@@ -91,7 +95,8 @@ def total(values):
 
 
 def main():
-    previous = json.loads(OUTPUT.read_text()) if OUTPUT.exists() else {}
+    document = json.loads(OUTPUT.read_text()) if OUTPUT.exists() else {}
+    previous = document.get("github", {})
 
     poketwo_commits = [commits(repo) for repo in POKETWO_REPOS]
     wearos_downloads, wearos_releases = zip(*(release_downloads(r) for r in WEAROS_REPOS))
@@ -119,7 +124,8 @@ def main():
             if counts[key] is None:
                 sys.exit(f"no value for {section}.{key} and no previous one to fall back on")
 
-    OUTPUT.write_text(json.dumps(stats, indent=2, sort_keys=True) + "\n")
+    document["github"] = stats
+    OUTPUT.write_text(json.dumps(document, indent=2, sort_keys=True) + "\n")
     print(json.dumps(stats, indent=2, sort_keys=True))
 
 

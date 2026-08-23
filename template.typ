@@ -8,6 +8,8 @@
 #let note(body) = text(size: 9.5pt, fill: luma(110), style: "italic")[#body]
 
 #let stats = json("stats.json")
+#let gh = stats.github
+#let manual = stats.manual
 
 #let group(n) = {
   let digits = str(n).clusters().rev()
