@@ -15,8 +15,8 @@
 
 Software developer building production systems at Discord scale. Core developer of
 #link("https://github.com/poketwo/poketwo")[Pokétwo], an open-source Pokémon game played in
-*#manual.poketwo.servers servers*, owning its anticheat stack and the image-generation service behind
-its visual commands. *#years-since(manual.programming_since) years* of programming across asynchronous Python,
+*#manual.poketwo.servers servers*, owning its anticheat stack and contributing to the
+image-generation service behind its visual commands. *#years-since(manual.programming_since) years* of programming across asynchronous Python,
 machine learning, Kotlin/Android and embedded C++. B.Tech. Computer Science student, 2028.
 
 = Experience
@@ -35,7 +35,7 @@ machine learning, Kotlin/Android and embedded C++. B.Tech. Computer Science stud
   up from *#manual.anticheat.detection_before to #manual.anticheat.detection_after*, false accusations
   of real players down *#manual.anticheat.false_accusation_drop* to
   *#manual.anticheat.false_accusation_rate*.
-- Lead contributor to the image service rendering battles, breeding, seasonal events and
+- Contributor to the image service rendering battles, breeding, seasonal events and
   user-customizable sprites, replacing static assets with a composable _Pillow_ pipeline.
 - Authored *#approx(gh.poketwo.commits, 500) commits* and *#approx(gh.poketwo.pull_requests, 10) pull
   requests* (*#group(gh.poketwo.merged_pull_requests) merged*) across #gh.poketwo.repositories production
