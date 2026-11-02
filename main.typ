@@ -31,9 +31,10 @@ machine learning, Kotlin/Android and embedded C++. B.Tech. Computer Science stud
   artwork behind them — for a game in *#manual.poketwo.servers servers* with
   *#manual.poketwo.trainers trainers* and *#manual.poketwo.daily_active daily active players*.
 - Built the anticheat system from scratch: a gradient-boosted model over character n-gram language
-  models, scoring *#manual.anticheat.accounts accounts* at *#manual.anticheat.auc AUC* — bot detection
-  up from *#manual.anticheat.detection_before to #manual.anticheat.detection_after*, false accusations
-  of real players down *#manual.anticheat.false_accusation_drop* to
+  models, scoring *#manual.anticheat.accounts accounts* and ranking a bot above a real player
+  *#calc.round(float(manual.anticheat.auc) * 100, digits: 1)% of the time* — bot detection up from
+  *#manual.anticheat.detection_before to #manual.anticheat.detection_after*, false accusations of real
+  players down *#manual.anticheat.false_accusation_drop* to
   *#manual.anticheat.false_accusation_rate*.
 - Contributor to the image service rendering battles, breeding, seasonal events and
   user-customizable sprites, replacing static assets with a composable _Pillow_ pipeline.
