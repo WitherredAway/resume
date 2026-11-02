@@ -1,15 +1,15 @@
 {
   "github": {
     "poketwo": {
-      "commits": 3735,
-      "merged_pull_requests": 484,
-      "pull_requests": 566,
+      "commits": 3777,
+      "merged_pull_requests": 532,
+      "pull_requests": 618,
       "repositories": 8
     },
     "wearos": {
-      "downloads": 1162,
+      "downloads": 1215,
       "releases": 10,
-      "stars": 33
+      "stars": 34
     },
     "yeet": {
       "commits": 891
